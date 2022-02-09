@@ -23,8 +23,9 @@ def status = "Success"
                                     
                                     
 		stage('pull from Docker') {
-                sh'''	
-                    sudo su docker build -t hello123 .
+                sh'''
+		    $ newgrp docker
+                    docker build -t hello123 .
 		    #docker run --rm hello123
                 '''
 	    }      
