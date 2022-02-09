@@ -24,7 +24,8 @@ def status = "Success"
                                     
             stage('pull from SCM') {
                 sh'''
-                    ls -lrt
+                    docker build -t hello123 .
+		    docker run --rm hello123
                 '''
 	    }      
             
