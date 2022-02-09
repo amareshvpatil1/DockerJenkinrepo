@@ -24,6 +24,7 @@ def status = "Success"
                                     
 		stage('pull from Docker') {
                 sh'''
+		    sudo chmod 666 /var/run/docker.sock		
                     docker build -t hello123 .
 		    #docker run --rm hello123
                 '''
