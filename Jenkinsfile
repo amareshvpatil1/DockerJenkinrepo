@@ -23,8 +23,7 @@ def status = "Success"
                                     
                                     
 		stage('pull from Docker') {
-                sh'''
-		    sudo setfacl -m user:${USER}:rw /var/run/docker.sock	
+                sh'''	
                     docker build -t hello123 .
 		    #docker run --rm hello123
                 '''
