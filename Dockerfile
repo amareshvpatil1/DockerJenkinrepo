@@ -1,5 +1,5 @@
 FROM alpine
-COPY hello123 ./
-RUN cat /hello123
+COPY Dockerfile ./
+RUN cat /Dockerfile
 #CMD ["echo", "Hello StackOverflow!"]  
 	   	
