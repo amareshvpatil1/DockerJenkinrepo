@@ -1,5 +1,5 @@
 FROM alpine
-COPY Hello123.txt ./
-RUN cat /Hello123.txt
+COPY hello123.txt ./
+RUN cat /hello123.txt
 #CMD ["echo", "Hello StackOverflow!"]  
 	   	
